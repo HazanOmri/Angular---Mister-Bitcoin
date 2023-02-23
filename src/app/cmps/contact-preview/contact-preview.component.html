@@ -1,0 +1,6 @@
+<div class="contact-preview" [routerLink]="['/contact', contact._id]">
+    <img src="https://robohash.org/{{contact._id}}" alt="">
+    <h3>{{contact.name}}</h3>
+    <a [routerLink]="['/edit', contact._id]">Edit</a>
+    <button (click)="onRemove(contact._id)"> Delete</button>
+</div>

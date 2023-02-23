@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    transition: all .3s;
+}
+
+body {
+    background-color: darkslategrey;
+    margin: 0;
+}
+
+.main-layout {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+
+    >*:not(.full) {
+        grid-column: 2;
+    }
+}
+
+.full {
+    grid-column: 1/-1;
+}

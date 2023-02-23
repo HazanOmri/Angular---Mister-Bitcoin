@@ -1,0 +1,21 @@
+<section class="contact-edit-container">
+    <div class="contact-edit">
+        <h2>{{contact._id ? 'Edit' : 'Add'}} contact</h2>
+        <form>
+            <label for="name"> Name:
+                <input [(ngModel)]="contact.name" type="text" name="name" id="name" placeholder="Enter name...">
+            </label>
+
+            <label for="phone"> Phone:
+                <input [(ngModel)]="contact.phone" type="text" name="phone" id="phone"
+                    placeholder="Enter phone number...">
+            </label>
+
+            <label for="email"> Email:
+                <input [(ngModel)]="contact.email" type="text" name="email" id="email" placeholder="Enter email...">
+            </label>
+
+            <a (click)="onAddPet()" routerLink="/contact">Save</a>
+        </form>
+    </div>
+</section>

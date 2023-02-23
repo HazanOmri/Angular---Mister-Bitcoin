@@ -1,0 +1,78 @@
+.contact-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: lighten(darkslategrey, 12%);
+        margin: 7px;
+        border-radius: 10px;
+        border: 2px solid black;
+        width: 320px;
+
+        h1 {
+            margin: 7px;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            padding: 0 5px;
+        }
+    }
+
+    a {
+        background-color: lighten(darkslategrey, 15%);
+        display: flex;
+        width: fit-content;
+        text-decoration: none;
+        color: black;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 5px 10px;
+
+        &:hover {
+            background-color: lighten(darkslategrey, 20%);
+        }
+    }
+
+    img {
+        width: 100px;
+        align-self: center;
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5px;
+
+        input {
+            padding: 5px 10px;
+            border-radius: 6px;
+            border: 1.5px solid black;
+            width: 100px;
+        }
+
+    }
+
+    button {
+        background-color: lighten(darkslategrey, 15%);
+        width: fit-content;
+        text-decoration: none;
+        color: black;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 5px 10px;
+        margin: 15px 0;
+
+        &:hover {
+            background-color: lighten(darkslategrey, 20%);
+        }
+    }
+
+}

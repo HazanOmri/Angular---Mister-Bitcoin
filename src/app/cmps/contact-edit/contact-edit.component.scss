@@ -1,0 +1,45 @@
+.contact-edit-container {
+    display: flex;
+    justify-content: center;
+
+    .contact-edit {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    input {
+        padding: 5px;
+        border-radius: 6px;
+        border: 1.5px solid black;
+        margin-inline-start: 8px;
+        width: 200px;
+    }
+
+    a {
+        background-color: lighten(darkslategrey, 5%);
+        align-self: center;
+        display: flex;
+        width: fit-content;
+        text-decoration: none;
+        color: black;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 5px 10px;
+
+        &:hover {
+            background-color: lighten(darkslategrey, 20%);
+        }
+    }
+}

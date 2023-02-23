@@ -1,0 +1,10 @@
+.move-list-container {
+    display: flex;
+    width: 320px;
+
+    .move-list {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+}

@@ -1,0 +1,20 @@
+header {
+    background-color: lighten(darkslategrey, 5%);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+        text-decoration: none;
+        color: black;
+        padding: 25px 20px;
+
+        &:hover {
+            background-color: lighten(darkslategrey, 20%);
+        }
+    }
+
+}

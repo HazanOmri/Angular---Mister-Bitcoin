@@ -1,0 +1,20 @@
+<section class="contact-details-container">
+    <div class="contact-details">
+        <div class="actions">
+            <a routerLink="/contact">Back</a>
+            <a [routerLink]="['/edit', contact._id]">Edit</a>
+        </div>
+        <img src="https://robohash.org/{{contact._id}}" alt="">
+        <h1>Name: {{contact.name}}</h1>
+        <h1>Phone: {{contact.phone}}</h1>
+        <h1>Email: {{contact.email}}</h1>
+        <form (submit)="onTransfer()">
+            <label>Amount:</label>
+            <input type="number" [(ngModel)]="amount" name="amount" min=0 max="{{user.coins}}"
+                placeholder="Enter amout..." />
+            <button>Transfer</button>
+        </form>
+    </div>
+    <app-moves-list *ngIf="moves.length" [moves]="moves"></app-moves-list>
+
+</section>
